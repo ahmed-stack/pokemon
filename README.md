@@ -23,7 +23,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 
 
 ### `npm run build`
@@ -35,7 +35,7 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 
-## Learn More
+# Learn More
 
 ## Libraries Used
 
@@ -60,7 +60,7 @@ For the testing of the application. ( Unit Testing, Integration Testing , Compon
 For the styling of HTML and use of pre build components like Modals, Grid, Cards
 
 ### styled-components
-For the styling of HTMl elements in a convenient way ( provide more readable and maintainable css, prevent duplication in classnames )
+For the styling of HTML elements in a convenient way ( provide more readable and maintainable css, prevent duplication in classnames )
 
 ### react-loader-spinner
 For the loading animation of application
