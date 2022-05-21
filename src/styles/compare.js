@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { strokeBlue, yellow } from "./global";
+import { strokeBlue } from "./global";
 
 export const CompareWrapper = styled.div`
   display: grid;
