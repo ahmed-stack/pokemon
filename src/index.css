@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #feca1b;
+  border-radius: 25px;
+}
+
+.modal-content {
+  background-color: rgb(211,211,211,0.85) !important;
+}
+
+.modal-header{
+  border-bottom: none !important;
+}
+
+.progress {
+  height: 0.8rem !important;
+}
+
+.progress-bar {
+  background-color: #3761a8 !important;
+  color: #feca1b !important;
+  font-size: 0.7em;
+}
+
