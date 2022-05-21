@@ -1,10 +1,17 @@
-# Getting Started with Create React App
+# Getting Started Guide
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Live demo
+[Pokemon App](http://localhost:3000)
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install all the required libraries
 
 ### `npm start`
 
@@ -17,7 +24,7 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
 
 ### `npm run build`
 
@@ -27,44 +34,63 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Libraries Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### redux / @reduxjs/toolkit / react-redux
 
-### Code Splitting
+For the state management of the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### axios
 
-### Analyzing the Bundle Size
+To make HTTP requests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### react-router-dom
 
-### Making a Progressive Web App
+For the routing of application ( single page application routing without refresh )
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### @testing-library/react / @testing-library/jest-dom / @testing-library/user-event
 
-### Advanced Configuration
+For the testing of the application. ( Unit Testing, Integration Testing , Component Testing, End to End Testing )
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### bootstrap / react-bootstrap
 
-### Deployment
+For the styling of HTML and use of pre build components like Modals, Grid, Cards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### styled-components
+For the styling of HTMl elements in a convenient way ( provide more readable and maintainable css, prevent duplication in classnames )
 
-### `npm run build` fails to minify
+### react-loader-spinner
+For the loading animation of application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### react-infinite-scroll-component
+To load more content on scroll 
+
+
+## Challenges Faced
+
+### Getting Pokemon List With Details
+Get pokemon list api just provide a list of pokemons with name and url, so to get more detail about pokemon calling each pokemon detail api separately to get pokemon more details and append them in a list in a quick way so to that user can easily find the desired pokemon from list is something challenging.
+
+### Filter Pokemon By Generation
+As get pokemon list api provide less information about each pokemon, same way getting a generation does not provide more details about pokemons in that generation. So calling each pokemon detail api in that generation efficiently to decrease the load time is something challenging for me.
+
+### Integration Testing
+Integrtaion testing of banner component and pokemon list component to test the search pokemon and filter pokemon functionalities is challenging. Writing all these tests in a single component using RTL ( react-testing-libraray ) with JEST creates leakage problem of previous render in the next render. This is something annoying in RTL, so to overcome this have to make separate test files.
+
+
+## Future Implementations
+
+### UI and Animations
+Add some animations and improve UI to make it more interactive.
+
+### Compare More Than Two Pokemons
+Add feature to compare more than two pokemons based on the user choice to make comparsion between different pokemons in a more effective way.
+
+### Pokemon Images
+Add a slider or image gallery for each pokemon which contain pokemon all front and back side images.
+
+### Better Pokemon Feature
+Add a feature to predict which pokemon is better in comparison, based on the pokemon stats.

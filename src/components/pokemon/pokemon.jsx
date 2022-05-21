@@ -26,6 +26,7 @@ function Pokemon() {
   const pokemons = useSelector(getPokemons);
   const favouritePokemons = useSelector(getFavouritePokemons);
 
+  // This function will return a list of pokemons based on the route and search parameters
   const getList = useMemo(() => {
     return !!searchedPokemon.length
       ? pathname === "/favourites"
