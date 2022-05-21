@@ -49,16 +49,16 @@ export class API {
 const Api = new API();
 
 // Request interceptor
-// axios.interceptors.request.use(
-//   async (config) => {
-//     return Promise.resolve(config);
-//   },
-//   (error) => Promise.reject(error)
-// );
+axios.interceptors.request.use(
+  async (config) => {
+    return Promise.resolve(config);
+  },
+  (error) => Promise.reject(error)
+);
 
-// // // Response interceptor
-// axios.interceptors.response.use(undefined, (error) => {
-//   return Promise.reject(error);
-// });
+// // Response interceptor
+axios.interceptors.response.use(undefined, (error) => {
+  return Promise.reject(error);
+});
 
 export default Api;

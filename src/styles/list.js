@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { strokeBlue, yellow } from "./global";
+import { yellow } from "./global";
 
 export const GridContainer = styled.div`
   height: 90%;
