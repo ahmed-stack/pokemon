@@ -69,7 +69,7 @@ function PokemonBanner() {
 
   return (
     <BannerContainer>
-      <h1>POKEMONSSSS</h1>
+      <h1>STAGING POKEMONS</h1>
       <FilterWrapper>
         <SelectInput
           placeholder="all generations"
