@@ -67,9 +67,11 @@ function PokemonBanner() {
     [debouncedChangeHandler]
   );
 
+  const pokemonHeading = process.env.REACT_APP_POKEMON_HEADING ?? "POKEMONS";
+
   return (
     <BannerContainer>
-      <h1>STAGING POKEMONS</h1>
+      <h1>{pokemonHeading}</h1>
       <FilterWrapper>
         <SelectInput
           placeholder="all generations"
