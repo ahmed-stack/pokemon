@@ -1,4 +1,4 @@
-const BASE_URL = `https://pokemonapi-env-1.eba-q6pph3mq.us-east-1.elasticbeanstalk.com`;
+const BASE_URL = process.env.REACT_APP_POKEMON_API_BASE_URL;
 
 const POKEMON_ROUTES = {
     getPokemons: `${BASE_URL}/getPokemons/`,
