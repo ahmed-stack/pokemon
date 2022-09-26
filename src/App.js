@@ -21,8 +21,8 @@ function App() {
         <AppLoader loadingRef="app.loading">
           <Layout>
             <Routes>
-              <Route path="/" index element={<PokemonPage />} />
-              <Route path="/favourites" index element={<PokemonPage />} />
+              <Route path="/" element={<PokemonPage />} />
+              <Route path="/favourites" element={<PokemonPage />} />
             </Routes>
           </Layout>
         </AppLoader>
