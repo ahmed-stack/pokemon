@@ -1,6 +1,6 @@
 import React from "react";
 
-// Local Imports
+// Local Importsss
 import { Pokemon } from "components/pokemon";
 
 function PokemonPage() {
