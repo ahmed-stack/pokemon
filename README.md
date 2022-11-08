@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Live demo
-[Pokemon App](https://main.d2ggncvcqknm6l.amplifyapp.com)
+[Pokemon App](https://main.d2ggncvcqknm6l.amplifyapp.com](https://beamish-paletas-289178.netlify.app)
 
 ## Available Scripts
 
