@@ -45,3 +45,11 @@ code {
   font-size: 0.7em;
 }
 
+
+.chatbot {
+  position: fixed;
+  font-size: 50px;
+  right: 30px;
+  bottom: 0px;
+  z-index: 999;
+}
